@@ -10,6 +10,7 @@ package GUI;
  * @author s1601396
  */
 public class Arvot {
+
     double AUD = 1.5008;
     double BGN = 1.9558;
     double BRL = 3.7568;
@@ -42,8 +43,73 @@ public class Arvot {
     double TWD = 35.8835;
     double USD = 1.1925;
     double ZAR = 15.5562;
-    
-    public int arvo (String valuutta){
+
+    public double arvo(String valuutta) {
+        if (valuutta.equals("AUD")) {
+            return AUD;
+        } else if (valuutta.equals("BGN")) {
+            return BGN;
+        } else if (valuutta.equals("BRL")) {
+            return BRL;
+        } else if (valuutta.equals("CAD")) {
+            return CAD;
+        } else if (valuutta.equals("CHF")) {
+            return CHF;
+        } else if (valuutta.equals("CNY")) {
+            return CNY;
+        } else if (valuutta.equals("CZK")) {
+            return CZK;
+        } else if (valuutta.equals("DKK")) {
+            return DKK;
+        } else if (valuutta.equals("GBP")) {
+            return GBP;
+        } else if (valuutta.equals("HKD")) {
+            return HKD;
+        } else if (valuutta.equals("HRK")) {
+            return HRK;
+        } else if (valuutta.equals("HUF")) {
+            return HUF;
+        } else if (valuutta.equals("IDR")) {
+            return IDR;
+        } else if (valuutta.equals("ILS")) {
+            return ILS;
+        } else if (valuutta.equals("INR")) {
+            return INR;
+        } else if (valuutta.equals("JPY")) {
+            return JPY;
+        } else if (valuutta.equals("KRW")) {
+            return KRW;
+        } else if (valuutta.equals("MXN")) {
+            return MXN;
+        } else if (valuutta.equals("MYR")) {
+            return MYR;
+        } else if (valuutta.equals("NOK")) {
+            return NOK;
+        } else if (valuutta.equals("NZD")) {
+            return NZD;
+        } else if (valuutta.equals("PHP")) {
+            return PHP;
+        } else if (valuutta.equals("PLN")) {
+            return PLN;
+        } else if (valuutta.equals("RON")) {
+            return RON;
+        } else if (valuutta.equals("RUB")) {
+            return RUB;
+        } else if (valuutta.equals("SEK")) {
+            return SEK;
+        } else if (valuutta.equals("SGD")) {
+            return SGD;
+        } else if (valuutta.equals("THB")) {
+            return THB;
+        } else if (valuutta.equals("TRY")) {
+            return TRY;
+        } else if (valuutta.equals("TWD")) {
+            return TWD;
+        } else if (valuutta.equals("USD")) {
+            return USD;
+        } else if (valuutta.equals("ZAR")) {
+            return ZAR;
+        }
         return 0;
     }
 
