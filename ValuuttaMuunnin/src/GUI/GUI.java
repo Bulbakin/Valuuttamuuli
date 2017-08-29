@@ -49,6 +49,7 @@ public class GUI extends javax.swing.JFrame {
         SexPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         CurrencyvariableZZZzzzZZZ.setBackground(new java.awt.Color(255, 153, 255));
+        CurrencyvariableZZZzzzZZZ.setText("0");
         SexPanel.add(CurrencyvariableZZZzzzZZZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 25));
 
         selectionbox69.setBackground(new java.awt.Color(255, 153, 255));
@@ -72,7 +73,7 @@ public class GUI extends javax.swing.JFrame {
 
         result.setEditable(false);
         result.setBackground(new java.awt.Color(255, 153, 255));
-        result.setFont(new java.awt.Font("Dialog", 0, 60)); // NOI18N
+        result.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
         result.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         result.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +86,11 @@ public class GUI extends javax.swing.JFrame {
         ButtonXOXO.setFont(new java.awt.Font("Dialog", 0, 40)); // NOI18N
         ButtonXOXO.setForeground(new java.awt.Color(255, 255, 255));
         ButtonXOXO.setText("Calculate");
+        ButtonXOXO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonXOXOActionPerformed(evt);
+            }
+        });
         BigSexy.add(ButtonXOXO, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 200, 120));
 
         jPanel3.add(BigSexy, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 480, 120));
@@ -102,6 +108,86 @@ public class GUI extends javax.swing.JFrame {
     private void xXxnotaselectionbox69xXxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xXxnotaselectionbox69xXxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_xXxnotaselectionbox69xXxActionPerformed
+
+    private void ButtonXOXOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonXOXOActionPerformed
+        // TODO add your handling code here:
+        double arvo = Double.parseDouble(CurrencyvariableZZZzzzZZZ.getText());
+        int valittu = selectionbox69.getSelectedIndex();
+        double paskaa = valuutta(valittu);
+
+        double paskaakinPaskempi = arvo * paskaa;
+
+        result.setText(Double.toString(paskaakinPaskempi));
+
+    }//GEN-LAST:event_ButtonXOXOActionPerformed
+    public double valuutta(int valittu) {
+        if (valittu == 0) {
+            return 1.5008;
+        } else if (valittu == 1) {
+            return 1.9558;
+        } else if (valittu == 2) {
+            return 3.7568;
+        } else if (valittu == 3) {
+            return 1.4866;
+        } else if (valittu == 4) {
+            return 1.1389;
+        } else if (valittu == 5) {
+            return 7.8979;
+        } else if (valittu == 6) {
+            return 26.102;
+        } else if (valittu == 7) {
+            return 7.4393;
+        } else if (valittu == 8) {
+            return 0.9233;
+        } else if (valittu == 9) {
+            return 9.3292;
+        } else if (valittu == 10) {
+            return 7.4145;
+        } else if (valittu == 11) {
+            return 304.01;
+        } else if (valittu == 12) {
+            return 15903.18;
+        } else if (valittu == 13) {
+            return 4.2719;
+        } else if (valittu == 14) {
+            return 76.2065;
+        } else if (valittu == 15) {
+            return 130.34;
+        } else if (valittu == 16) {
+            return 1335.56;
+        } else if (valittu == 17) {
+            return 21.0584;
+        } else if (valittu == 18) {
+            return 5.0889;
+        } else if (valittu == 19) {
+            return 9.262;
+        } else if (valittu == 20) {
+            return 1.6458;
+        } else if (valittu == 21) {
+            return 60.841;
+        } else if (valittu == 22) {
+            return 4.2581;
+        } else if (valittu == 23) {
+            return 4.5977;
+        } else if (valittu == 24) {
+            return 69.659;
+        } else if (valittu == 25) {
+            return 9.5155;
+        } else if (valittu == 26) {
+            return 1.6156;
+        } else if (valittu == 27) {
+            return 39.591;
+        } else if (valittu == 28) {
+            return 4.1063;
+        } else if (valittu == 29) {
+            return 35.8835;
+        } else if (valittu == 30) {
+            return 1.1925;
+        } else if (valittu == 31) {
+            return 15.5562;
+        }
+        return 0;
+    }
 
     /**
      * @param args the command line arguments
